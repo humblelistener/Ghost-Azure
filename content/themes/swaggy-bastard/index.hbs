@@ -10,11 +10,12 @@
     <div class="panel-cover-overlay"></div>
     <div class="vertical">
         <div class="site-head-content inner">
+            <img src="https://s.gravatar.com/avatar/384cacf461b64b0de597ec6ed99f54f2?s=200" alt="Karthik's gravatar" />
             {{#if @blog.logo}}
                 <img src="{{@blog.logo}}" alt="Blog Logo" />
             {{else}}
                 <h1 class="blog-title">{{@blog.title}}</h1>
-            {{/if}}    
+            {{/if}}
             <h2 class="blog-description">{{@blog.description}}</h2>
             {{! Social Links }}
             {{> social }}
@@ -37,20 +38,20 @@
 
     <article class="{{post_class}}">
         <header class="post-header">
-                     
+
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
             <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM Do, YYYY"}}</time> {{tags prefix="in "}}</span>
         </header>
         <section class="post-excerpt">
-             
+
             <p>
                  {{#if image}}
-                   <img src="{{image}}"></img> 
-                  {{/if}}                
+                   <img src="{{image}}"></img>
+                  {{/if}}
                 {{excerpt}}&hellip;
-                
+
                 <br style="clear: both;" />
-            </p>           
+            </p>
         </section>
 
     </article>
@@ -64,7 +65,7 @@
           <div class="col-xs-12 text-center">
             {{pagination}}
           </div>
-        </div>    
+        </div>
     </div>
 
 </main>
